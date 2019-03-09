@@ -1,0 +1,4 @@
+include README.md
+recursive-include octoprint_Lighting/templates *
+recursive-include octoprint_Lighting/translations *
+recursive-include octoprint_Lighting/static *
