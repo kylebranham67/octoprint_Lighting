@@ -8,7 +8,8 @@ from easyprocess import EasyProcess
 class LightingPlugin(octoprint.plugin.SettingsPlugin,
                      octoprint.plugin.AssetPlugin,
                      octoprint.plugin.TemplatePlugin
-		     octoprint.plugin.StartupPlugin):
+		     octoprint.plugin.StartupPlugin
+		     octoprint.plugin.ShutdownPlugin):
 
 	##~~ SettingsPlugin mixin
 	def __init__(self):
