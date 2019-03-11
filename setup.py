@@ -13,9 +13,7 @@ plugin_license = "AGPLv3"
 plugin_requires = ["EasyProcess"]
 
 
-additional_packages=plugin_additional_packages,
-ignored_packages=plugin_ignored_packages,
-additional_data=plugin_additional_data
+
 plugin_additional_data = []
 plugin_additional_packages = []
 plugin_ignored_packages = []
