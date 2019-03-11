@@ -113,9 +113,9 @@ class LightingPlugin(octoprint.plugin.SettingsPlugin,
 				# place the temperatures into an environment dictionary to pass to the remote program
 				for t in temps.keys():
 					env["TEMPERATURE_FAILSAFE_%s_ACTUAL" % t.upper()] = str(temps[t]['actual'])
-					print str(temps[t]['actual']
+					print (str(temps[t]['actual']))
 					env["TEMPERATURE_FAILSAFE_%s_TARGET" % t.upper()] = str(temps[t]['target'])
-					print str(temps[t]['target'])
+					print (str(temps[t]['target']))
 				#self._executeFailsafe(env)
 
 
