@@ -2,6 +2,8 @@
 from __future__ import absolute_import
 
 import octoprint.plugin
+from octoprint.util import RepeatedTimer
+from easyprocess import EasyProcess
 
 class LightingPlugin(octoprint.plugin.SettingsPlugin,
                      octoprint.plugin.AssetPlugin,
