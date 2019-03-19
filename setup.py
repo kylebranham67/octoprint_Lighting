@@ -14,7 +14,7 @@ plugin_requires = ["EasyProcess"]
 
 
 
-plugin_additional_data = []
+plugin_additional_data = ['libs']
 plugin_additional_packages = []
 plugin_ignored_packages = []
 additional_setup_parameters = {}
