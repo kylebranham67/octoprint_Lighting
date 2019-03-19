@@ -4,6 +4,7 @@ from __future__ import absolute_import
 import octoprint.plugin
 from octoprint.util import RepeatedTimer
 from easyprocess import EasyProcess
+from .libs.sbc import SBCFactory
 
 class LightingPlugin(octoprint.plugin.SettingsPlugin,
                      octoprint.plugin.AssetPlugin,
@@ -12,6 +13,15 @@ class LightingPlugin(octoprint.plugin.SettingsPlugin,
 		     octoprint.plugin.ShutdownPlugin):
 
 	##~~ SettingsPlugin mixin
+	
+	def __init__(self):
+        self.piSocTypes = (["BCM2708", "BCM2709",
+                            "BCM2835"])  # Array of raspberry pi SoC's to check against, saves having a large if/then statement later
+        self.debugMode = False  # to simulate temp on Win/Mac
+        self.displayRaspiTemp = True
+        self._checkTempTimer = None
+        self.sbc = None
+
 	def __init__(self):
 		self._checkTempTimer = None
 
