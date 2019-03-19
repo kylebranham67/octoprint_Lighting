@@ -4,6 +4,9 @@ from __future__ import absolute_import
 import octoprint.plugin
 from octoprint.util import RepeatedTimer
 from easyprocess import EasyProcess
+from octoprint.util import RepeatedTimer
+import sys
+import re
 from .libs.sbc import SBCFactory
 
 class LightingPlugin(octoprint.plugin.SettingsPlugin,
