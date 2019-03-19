@@ -15,12 +15,12 @@ class LightingPlugin(octoprint.plugin.SettingsPlugin,
 	##~~ SettingsPlugin mixin
 	
 	def __init__(self):
-        self.piSocTypes = (["BCM2708", "BCM2709",
-                            "BCM2835"])  # Array of raspberry pi SoC's to check against, saves having a large if/then statement later
-        self.debugMode = False  # to simulate temp on Win/Mac
-        self.displayRaspiTemp = True
-        self._checkTempTimer = None
-        self.sbc = None
+        	self.piSocTypes = (["BCM2708", "BCM2709",
+                       "BCM2835"])  # Array of raspberry pi SoC's to check against, saves having a large if/then statement later
+        	self.debugMode = False  # to simulate temp on Win/Mac
+        	self.displayRaspiTemp = True
+        	self._checkTempTimer = None
+       	 self.sbc = None
 
 	def __init__(self):
 		self._checkTempTimer = None
