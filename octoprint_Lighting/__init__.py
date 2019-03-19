@@ -20,7 +20,7 @@ class LightingPlugin(octoprint.plugin.SettingsPlugin,
         	self.debugMode = False  # to simulate temp on Win/Mac
         	self.displayRaspiTemp = True
         	self._checkTempTimer = None
-       	 self.sbc = None
+       	 	self.sbc = None
 
 	def __init__(self):
 		self._checkTempTimer = None
